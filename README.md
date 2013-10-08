@@ -11,8 +11,8 @@ Customization should be made within `_layout.scss` or add your own partials and
 append them to `style.scss`.
 
 Rebuild using `make rebuild` or `make clean` followed by `make build`. This will
-build the development version - to build the production version, update the
-`Makefile` to pass `production` as the environment to compass.
+build the development version - to build the production version, run
+`make rebuild ENV=production`.
 
 # License
 

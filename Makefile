@@ -1,5 +1,7 @@
+ENV?=development
+
 build:
-	@compass compile -e development
+	@compass compile -e $(ENV)
 
 rebuild:
 	@$(MAKE) clean
