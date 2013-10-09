@@ -7,6 +7,9 @@ SASS port of Skeleton.
 
 Clone it and use `css/style.css` :)
 
+`config.rb` is included to make using the source easier. Update the sass and css
+source and go. You'll also need compass installed.
+
 Customization should be made within `_layout.scss` or add your own partials and
 append them to `style.scss`.
 
