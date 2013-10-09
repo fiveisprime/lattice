@@ -6,6 +6,8 @@
  * http://www.opensource.org/licenses/mit-license.php
  * 6/20/2012
  */
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
 /* line 25, ../sass/partials/_base.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -17,42 +19,51 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* line 33, ../sass/partials/_base.scss */
+sup {
+  font-size: smaller;
+  vertical-align: 0.4em;
+}
+
+/* line 37, ../sass/partials/_base.scss */
+sub {
+  font-size: smaller;
+  vertical-align: -0.25em;
+}
+
+/* line 41, ../sass/partials/_base.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 36, ../sass/partials/_base.scss */
+/* line 44, ../sass/partials/_base.scss */
 body {
   line-height: 1;
 }
 
-/* line 39, ../sass/partials/_base.scss */
+/* line 47, ../sass/partials/_base.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 42, ../sass/partials/_base.scss */
+/* line 50, ../sass/partials/_base.scss */
 blockquote, q {
   quotes: none;
 }
-/* line 44, ../sass/partials/_base.scss */
-blockquote:before, q:before {
-  content: '';
-  content: none;
-}
-/* line 48, ../sass/partials/_base.scss */
-blockquote:after, q:after {
+
+/* line 54, ../sass/partials/_base.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 53, ../sass/partials/_base.scss */
+/* line 58, ../sass/partials/_base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 60, ../sass/partials/_base.scss */
+/* line 65, ../sass/partials/_base.scss */
 body {
   background: white;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -63,98 +74,98 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 72, ../sass/partials/_base.scss */
+/* line 77, ../sass/partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
   font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
 }
 
-/* line 76, ../sass/partials/_base.scss */
+/* line 81, ../sass/partials/_base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
-/* line 77, ../sass/partials/_base.scss */
+/* line 82, ../sass/partials/_base.scss */
 h1 {
   font-size: 46px;
   line-height: 50px;
   margin-bottom: 14px;
 }
 
-/* line 78, ../sass/partials/_base.scss */
+/* line 83, ../sass/partials/_base.scss */
 h2 {
   font-size: 35px;
   line-height: 40px;
   margin-bottom: 10px;
 }
 
-/* line 79, ../sass/partials/_base.scss */
+/* line 84, ../sass/partials/_base.scss */
 h3 {
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 8px;
 }
 
-/* line 80, ../sass/partials/_base.scss */
+/* line 85, ../sass/partials/_base.scss */
 h4 {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 4px;
 }
 
-/* line 81, ../sass/partials/_base.scss */
+/* line 86, ../sass/partials/_base.scss */
 h5 {
   font-size: 17px;
   line-height: 24px;
 }
 
-/* line 82, ../sass/partials/_base.scss */
+/* line 87, ../sass/partials/_base.scss */
 h6 {
   font-size: 14px;
   line-height: 21px;
 }
 
-/* line 83, ../sass/partials/_base.scss */
+/* line 88, ../sass/partials/_base.scss */
 .subheader {
   color: #777;
 }
 
-/* line 85, ../sass/partials/_base.scss */
+/* line 90, ../sass/partials/_base.scss */
 p {
   margin: 0 0 20px 0;
 }
 
-/* line 86, ../sass/partials/_base.scss */
+/* line 91, ../sass/partials/_base.scss */
 p img {
   margin: 0;
 }
 
-/* line 87, ../sass/partials/_base.scss */
+/* line 92, ../sass/partials/_base.scss */
 p.lead {
   font-size: 21px;
   line-height: 27px;
   color: #777;
 }
 
-/* line 89, ../sass/partials/_base.scss */
+/* line 94, ../sass/partials/_base.scss */
 em {
   font-style: italic;
 }
 
-/* line 90, ../sass/partials/_base.scss */
+/* line 95, ../sass/partials/_base.scss */
 strong {
   font-weight: bold;
   color: #333;
 }
 
-/* line 91, ../sass/partials/_base.scss */
+/* line 96, ../sass/partials/_base.scss */
 small {
   font-size: 80%;
 }
 
 /*  Blockquotes  */
-/* line 94, ../sass/partials/_base.scss */
+/* line 99, ../sass/partials/_base.scss */
 blockquote, blockquote p {
   font-size: 17px;
   line-height: 24px;
@@ -162,30 +173,30 @@ blockquote, blockquote p {
   font-style: italic;
 }
 
-/* line 95, ../sass/partials/_base.scss */
+/* line 100, ../sass/partials/_base.scss */
 blockquote {
   margin: 0 0 20px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #dddddd;
 }
 
-/* line 96, ../sass/partials/_base.scss */
+/* line 101, ../sass/partials/_base.scss */
 blockquote cite {
   display: block;
   font-size: 12px;
   color: #555;
 }
-/* line 98, ../sass/partials/_base.scss */
+/* line 103, ../sass/partials/_base.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
 
-/* line 100, ../sass/partials/_base.scss */
+/* line 105, ../sass/partials/_base.scss */
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555;
 }
 
-/* line 102, ../sass/partials/_base.scss */
+/* line 107, ../sass/partials/_base.scss */
 hr {
   border: solid #dddddd;
   border-width: 1px 0 0;
@@ -194,96 +205,96 @@ hr {
   height: 0;
 }
 
-/* line 106, ../sass/partials/_base.scss */
+/* line 111, ../sass/partials/_base.scss */
 a, a:visited {
   color: #333333;
   text-decoration: underline;
   outline: 0;
 }
 
-/* line 107, ../sass/partials/_base.scss */
+/* line 112, ../sass/partials/_base.scss */
 a:hover, a:focus {
   color: black;
 }
 
-/* line 108, ../sass/partials/_base.scss */
+/* line 113, ../sass/partials/_base.scss */
 p a, p a:visited {
   line-height: inherit;
 }
 
 /* #Lists
 ================================================== */
-/* line 112, ../sass/partials/_base.scss */
+/* line 117, ../sass/partials/_base.scss */
 ul, ol {
   margin-bottom: 20px;
 }
 
-/* line 113, ../sass/partials/_base.scss */
+/* line 118, ../sass/partials/_base.scss */
 ul {
   list-style: none outside;
 }
 
-/* line 114, ../sass/partials/_base.scss */
+/* line 119, ../sass/partials/_base.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 115, ../sass/partials/_base.scss */
+/* line 120, ../sass/partials/_base.scss */
 ol, ul.square, ul.circle, ul.disc {
   margin-left: 30px;
 }
 
-/* line 116, ../sass/partials/_base.scss */
+/* line 121, ../sass/partials/_base.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 117, ../sass/partials/_base.scss */
+/* line 122, ../sass/partials/_base.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 118, ../sass/partials/_base.scss */
+/* line 123, ../sass/partials/_base.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 120, ../sass/partials/_base.scss */
+/* line 125, ../sass/partials/_base.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 4px 0 5px 30px;
   font-size: 90%;
 }
 
-/* line 122, ../sass/partials/_base.scss */
+/* line 127, ../sass/partials/_base.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 6px;
 }
 
-/* line 123, ../sass/partials/_base.scss */
+/* line 128, ../sass/partials/_base.scss */
 li {
   line-height: 18px;
   margin-bottom: 12px;
 }
 
-/* line 124, ../sass/partials/_base.scss */
+/* line 129, ../sass/partials/_base.scss */
 ul.large li {
   line-height: 21px;
 }
 
-/* line 125, ../sass/partials/_base.scss */
+/* line 130, ../sass/partials/_base.scss */
 li p {
   line-height: 21px;
 }
 
-/* line 130, ../sass/partials/_base.scss */
+/* line 135, ../sass/partials/_base.scss */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
 }
 
-/* line 142, ../sass/partials/_base.scss */
+/* line 147, ../sass/partials/_base.scss */
 .button,
 button,
 input[type="submit"],
@@ -312,7 +323,7 @@ input[type="button"] {
   padding: 8px 10px;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 159, ../sass/partials/_base.scss */
+/* line 164, ../sass/partials/_base.scss */
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -328,7 +339,7 @@ input[type="button"]:hover {
   border-top: 1px solid #aaaaaa;
   border-left: 1px solid #aaaaaa;
 }
-/* line 166, ../sass/partials/_base.scss */
+/* line 171, ../sass/partials/_base.scss */
 .button:active,
 button:active,
 input[type="submit"]:active,
@@ -341,7 +352,7 @@ input[type="button"]:active {
   background-image: -o-linear-gradient(#cccccc, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
   background-image: linear-gradient(#cccccc, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
 }
-/* line 170, ../sass/partials/_base.scss */
+/* line 175, ../sass/partials/_base.scss */
 .button.full-width,
 button.full-width,
 input[type="submit"].full-width,
@@ -353,24 +364,24 @@ input[type="button"].full-width {
   text-align: center;
 }
 
-/* line 180, ../sass/partials/_base.scss */
+/* line 185, ../sass/partials/_base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 188, ../sass/partials/_base.scss */
+/* line 193, ../sass/partials/_base.scss */
 form {
   margin-bottom: 20px;
 }
 
-/* line 191, ../sass/partials/_base.scss */
+/* line 196, ../sass/partials/_base.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 198, ../sass/partials/_base.scss */
+/* line 203, ../sass/partials/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -394,12 +405,12 @@ select {
   background: #fff;
 }
 
-/* line 212, ../sass/partials/_base.scss */
+/* line 217, ../sass/partials/_base.scss */
 select {
   padding: 0;
 }
 
-/* line 218, ../sass/partials/_base.scss */
+/* line 223, ../sass/partials/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -411,12 +422,12 @@ textarea:focus {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 223, ../sass/partials/_base.scss */
+/* line 228, ../sass/partials/_base.scss */
 textarea {
   min-height: 60px;
 }
 
-/* line 227, ../sass/partials/_base.scss */
+/* line 232, ../sass/partials/_base.scss */
 label,
 legend {
   display: block;
@@ -424,17 +435,17 @@ legend {
   font-size: 13px;
 }
 
-/* line 232, ../sass/partials/_base.scss */
+/* line 237, ../sass/partials/_base.scss */
 select {
   width: 220px;
 }
 
-/* line 235, ../sass/partials/_base.scss */
+/* line 240, ../sass/partials/_base.scss */
 input[type="checkbox"] {
   display: inline;
 }
 
-/* line 239, ../sass/partials/_base.scss */
+/* line 244, ../sass/partials/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -442,30 +453,38 @@ legend span {
   color: #444;
 }
 
-/* line 247, ../sass/partials/_base.scss */
+/* line 252, ../sass/partials/_base.scss */
 .remove-bottom {
   margin-bottom: 0 !important;
 }
 
-/* line 248, ../sass/partials/_base.scss */
+/* line 253, ../sass/partials/_base.scss */
 .half-bottom {
   margin-bottom: 10px !important;
 }
 
-/* line 249, ../sass/partials/_base.scss */
+/* line 254, ../sass/partials/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
 
 /*
-* Skeleton V1.2
+* Skeleton
 * Copyright 2011, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
 */
-/* line 24, ../sass/partials/_skeleton.scss */
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+/* #Base 960 Grid
+================================================== */
+/* line 21, ../sass/partials/_skeleton.scss */
 .container {
   position: relative;
   width: 960px;
@@ -473,410 +492,424 @@ legend span {
   padding: 0;
 }
 
-/* line 26, ../sass/partials/_skeleton.scss */
+/* line 23, ../sass/partials/_skeleton.scss */
 .container .column,
 .container .columns {
   float: left;
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 27, ../sass/partials/_skeleton.scss */
+/* line 24, ../sass/partials/_skeleton.scss */
 .row {
   margin-bottom: 20px;
 }
 
 /* Nested Column Classes */
-/* line 30, ../sass/partials/_skeleton.scss */
-.column.alpha, .columns.alpha {
+/* line 28, ../sass/partials/_skeleton.scss */
+.column.alpha, .columns.alpha,
+.column:first-child, .columns:first-child {
   margin-left: 0;
 }
 
-/* line 31, ../sass/partials/_skeleton.scss */
-.column.omega, .columns.omega {
+/* line 30, ../sass/partials/_skeleton.scss */
+.column.omega, .columns.omega,
+.column:last-child, .columns:last-child {
   margin-right: 0;
 }
 
 /* Base Grid */
-/* line 35, ../sass/partials/_skeleton.scss */
+/* line 34, ../sass/partials/_skeleton.scss */
 .container .one.column,
 .container .one.columns {
   width: 40px;
 }
 
-/* line 36, ../sass/partials/_skeleton.scss */
+/* line 35, ../sass/partials/_skeleton.scss */
 .container .two.columns {
   width: 100px;
 }
 
-/* line 37, ../sass/partials/_skeleton.scss */
+/* line 36, ../sass/partials/_skeleton.scss */
 .container .three.columns {
   width: 160px;
 }
 
-/* line 38, ../sass/partials/_skeleton.scss */
+/* line 37, ../sass/partials/_skeleton.scss */
 .container .four.columns {
   width: 220px;
 }
 
-/* line 39, ../sass/partials/_skeleton.scss */
+/* line 38, ../sass/partials/_skeleton.scss */
 .container .five.columns {
   width: 280px;
 }
 
-/* line 40, ../sass/partials/_skeleton.scss */
+/* line 39, ../sass/partials/_skeleton.scss */
 .container .six.columns {
   width: 340px;
 }
 
-/* line 41, ../sass/partials/_skeleton.scss */
+/* line 40, ../sass/partials/_skeleton.scss */
 .container .seven.columns {
   width: 400px;
 }
 
-/* line 42, ../sass/partials/_skeleton.scss */
+/* line 41, ../sass/partials/_skeleton.scss */
 .container .eight.columns {
   width: 460px;
 }
 
-/* line 43, ../sass/partials/_skeleton.scss */
+/* line 42, ../sass/partials/_skeleton.scss */
 .container .nine.columns {
   width: 520px;
 }
 
-/* line 44, ../sass/partials/_skeleton.scss */
+/* line 43, ../sass/partials/_skeleton.scss */
 .container .ten.columns {
   width: 580px;
 }
 
-/* line 45, ../sass/partials/_skeleton.scss */
+/* line 44, ../sass/partials/_skeleton.scss */
 .container .eleven.columns {
   width: 640px;
 }
 
-/* line 46, ../sass/partials/_skeleton.scss */
+/* line 45, ../sass/partials/_skeleton.scss */
 .container .twelve.columns {
   width: 700px;
 }
 
-/* line 47, ../sass/partials/_skeleton.scss */
+/* line 46, ../sass/partials/_skeleton.scss */
 .container .thirteen.columns {
   width: 760px;
 }
 
-/* line 48, ../sass/partials/_skeleton.scss */
+/* line 47, ../sass/partials/_skeleton.scss */
 .container .fourteen.columns {
   width: 820px;
 }
 
-/* line 49, ../sass/partials/_skeleton.scss */
+/* line 48, ../sass/partials/_skeleton.scss */
 .container .fifteen.columns {
   width: 880px;
 }
 
-/* line 50, ../sass/partials/_skeleton.scss */
+/* line 49, ../sass/partials/_skeleton.scss */
 .container .sixteen.columns {
   width: 940px;
 }
 
-/* line 52, ../sass/partials/_skeleton.scss */
+/* line 51, ../sass/partials/_skeleton.scss */
 .container .one-third.column {
   width: 300px;
 }
 
-/* line 53, ../sass/partials/_skeleton.scss */
+/* line 52, ../sass/partials/_skeleton.scss */
 .container .two-thirds.column {
   width: 620px;
 }
 
 /* Offsets */
-/* line 56, ../sass/partials/_skeleton.scss */
+/* line 55, ../sass/partials/_skeleton.scss */
 .container .offset-by-one {
   padding-left: 60px;
 }
 
-/* line 57, ../sass/partials/_skeleton.scss */
+/* line 56, ../sass/partials/_skeleton.scss */
 .container .offset-by-two {
   padding-left: 120px;
 }
 
-/* line 58, ../sass/partials/_skeleton.scss */
+/* line 57, ../sass/partials/_skeleton.scss */
 .container .offset-by-three {
   padding-left: 180px;
 }
 
-/* line 59, ../sass/partials/_skeleton.scss */
+/* line 58, ../sass/partials/_skeleton.scss */
 .container .offset-by-four {
   padding-left: 240px;
 }
 
-/* line 60, ../sass/partials/_skeleton.scss */
+/* line 59, ../sass/partials/_skeleton.scss */
 .container .offset-by-five {
   padding-left: 300px;
 }
 
-/* line 61, ../sass/partials/_skeleton.scss */
+/* line 60, ../sass/partials/_skeleton.scss */
 .container .offset-by-six {
   padding-left: 360px;
 }
 
-/* line 62, ../sass/partials/_skeleton.scss */
+/* line 61, ../sass/partials/_skeleton.scss */
 .container .offset-by-seven {
   padding-left: 420px;
 }
 
-/* line 63, ../sass/partials/_skeleton.scss */
+/* line 62, ../sass/partials/_skeleton.scss */
 .container .offset-by-eight {
   padding-left: 480px;
 }
 
-/* line 64, ../sass/partials/_skeleton.scss */
+/* line 63, ../sass/partials/_skeleton.scss */
 .container .offset-by-nine {
   padding-left: 540px;
 }
 
-/* line 65, ../sass/partials/_skeleton.scss */
+/* line 64, ../sass/partials/_skeleton.scss */
 .container .offset-by-ten {
   padding-left: 600px;
 }
 
-/* line 66, ../sass/partials/_skeleton.scss */
+/* line 65, ../sass/partials/_skeleton.scss */
 .container .offset-by-eleven {
   padding-left: 660px;
 }
 
-/* line 67, ../sass/partials/_skeleton.scss */
+/* line 66, ../sass/partials/_skeleton.scss */
 .container .offset-by-twelve {
   padding-left: 720px;
 }
 
-/* line 68, ../sass/partials/_skeleton.scss */
+/* line 67, ../sass/partials/_skeleton.scss */
 .container .offset-by-thirteen {
   padding-left: 780px;
 }
 
-/* line 69, ../sass/partials/_skeleton.scss */
+/* line 68, ../sass/partials/_skeleton.scss */
 .container .offset-by-fourteen {
   padding-left: 840px;
 }
 
-/* line 70, ../sass/partials/_skeleton.scss */
+/* line 69, ../sass/partials/_skeleton.scss */
 .container .offset-by-fifteen {
   padding-left: 900px;
 }
 
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 77, ../sass/partials/_skeleton.scss */
+  /* line 79, ../sass/partials/_skeleton.scss */
   .container {
     width: 768px;
   }
 
-  /* line 79, ../sass/partials/_skeleton.scss */
-  .container .column,
-  .container .columns {
+  /* line 80, ../sass/partials/_skeleton.scss */
+  .container .column, .container .columns {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  /* line 80, ../sass/partials/_skeleton.scss */
-  .column.alpha, .columns.alpha {
+  /* line 82, ../sass/partials/_skeleton.scss */
+  .column.alpha, .columns.alpha,
+  .column:first-child, .columns:first-child {
     margin-left: 0;
     margin-right: 10px;
   }
 
-  /* line 81, ../sass/partials/_skeleton.scss */
-  .column.omega, .columns.omega {
+  /* line 84, ../sass/partials/_skeleton.scss */
+  .column.omega, .columns.omega,
+  .column:last-child, .columns:last-child {
     margin-right: 0;
     margin-left: 10px;
   }
 
-  /* line 82, ../sass/partials/_skeleton.scss */
+  /* line 87, ../sass/partials/_skeleton.scss */
+  .column:first-child:last-child,
+  .columns:first-child:last-child,
   .alpha.omega {
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* line 85, ../sass/partials/_skeleton.scss */
+  /* line 90, ../sass/partials/_skeleton.scss */
   .container .one.column,
   .container .one.columns {
     width: 28px;
   }
 
-  /* line 86, ../sass/partials/_skeleton.scss */
+  /* line 91, ../sass/partials/_skeleton.scss */
   .container .two.columns {
     width: 76px;
   }
 
-  /* line 87, ../sass/partials/_skeleton.scss */
+  /* line 92, ../sass/partials/_skeleton.scss */
   .container .three.columns {
     width: 124px;
   }
 
-  /* line 88, ../sass/partials/_skeleton.scss */
+  /* line 93, ../sass/partials/_skeleton.scss */
   .container .four.columns {
     width: 172px;
   }
 
-  /* line 89, ../sass/partials/_skeleton.scss */
+  /* line 94, ../sass/partials/_skeleton.scss */
   .container .five.columns {
     width: 220px;
   }
 
-  /* line 90, ../sass/partials/_skeleton.scss */
+  /* line 95, ../sass/partials/_skeleton.scss */
   .container .six.columns {
     width: 268px;
   }
 
-  /* line 91, ../sass/partials/_skeleton.scss */
+  /* line 96, ../sass/partials/_skeleton.scss */
   .container .seven.columns {
     width: 316px;
   }
 
-  /* line 92, ../sass/partials/_skeleton.scss */
+  /* line 97, ../sass/partials/_skeleton.scss */
   .container .eight.columns {
     width: 364px;
   }
 
-  /* line 93, ../sass/partials/_skeleton.scss */
+  /* line 98, ../sass/partials/_skeleton.scss */
   .container .nine.columns {
     width: 412px;
   }
 
-  /* line 94, ../sass/partials/_skeleton.scss */
+  /* line 99, ../sass/partials/_skeleton.scss */
   .container .ten.columns {
     width: 460px;
   }
 
-  /* line 95, ../sass/partials/_skeleton.scss */
+  /* line 100, ../sass/partials/_skeleton.scss */
   .container .eleven.columns {
     width: 508px;
   }
 
-  /* line 96, ../sass/partials/_skeleton.scss */
+  /* line 101, ../sass/partials/_skeleton.scss */
   .container .twelve.columns {
     width: 556px;
   }
 
-  /* line 97, ../sass/partials/_skeleton.scss */
+  /* line 102, ../sass/partials/_skeleton.scss */
   .container .thirteen.columns {
     width: 604px;
   }
 
-  /* line 98, ../sass/partials/_skeleton.scss */
+  /* line 103, ../sass/partials/_skeleton.scss */
   .container .fourteen.columns {
     width: 652px;
   }
 
-  /* line 99, ../sass/partials/_skeleton.scss */
+  /* line 104, ../sass/partials/_skeleton.scss */
   .container .fifteen.columns {
     width: 700px;
   }
 
-  /* line 100, ../sass/partials/_skeleton.scss */
+  /* line 105, ../sass/partials/_skeleton.scss */
   .container .sixteen.columns {
     width: 748px;
   }
 
-  /* line 102, ../sass/partials/_skeleton.scss */
+  /* line 107, ../sass/partials/_skeleton.scss */
   .container .one-third.column {
     width: 236px;
   }
 
-  /* line 103, ../sass/partials/_skeleton.scss */
+  /* line 108, ../sass/partials/_skeleton.scss */
   .container .two-thirds.column {
     width: 492px;
   }
 
   /* Offsets */
-  /* line 106, ../sass/partials/_skeleton.scss */
+  /* line 111, ../sass/partials/_skeleton.scss */
   .container .offset-by-one {
     padding-left: 48px;
   }
 
-  /* line 107, ../sass/partials/_skeleton.scss */
+  /* line 112, ../sass/partials/_skeleton.scss */
   .container .offset-by-two {
     padding-left: 96px;
   }
 
-  /* line 108, ../sass/partials/_skeleton.scss */
+  /* line 113, ../sass/partials/_skeleton.scss */
   .container .offset-by-three {
     padding-left: 144px;
   }
 
-  /* line 109, ../sass/partials/_skeleton.scss */
+  /* line 114, ../sass/partials/_skeleton.scss */
   .container .offset-by-four {
     padding-left: 192px;
   }
 
-  /* line 110, ../sass/partials/_skeleton.scss */
+  /* line 115, ../sass/partials/_skeleton.scss */
   .container .offset-by-five {
     padding-left: 240px;
   }
 
-  /* line 111, ../sass/partials/_skeleton.scss */
+  /* line 116, ../sass/partials/_skeleton.scss */
   .container .offset-by-six {
     padding-left: 288px;
   }
 
-  /* line 112, ../sass/partials/_skeleton.scss */
+  /* line 117, ../sass/partials/_skeleton.scss */
   .container .offset-by-seven {
     padding-left: 336px;
   }
 
-  /* line 113, ../sass/partials/_skeleton.scss */
+  /* line 118, ../sass/partials/_skeleton.scss */
   .container .offset-by-eight {
     padding-left: 384px;
   }
 
-  /* line 114, ../sass/partials/_skeleton.scss */
+  /* line 119, ../sass/partials/_skeleton.scss */
   .container .offset-by-nine {
     padding-left: 432px;
   }
 
-  /* line 115, ../sass/partials/_skeleton.scss */
+  /* line 120, ../sass/partials/_skeleton.scss */
   .container .offset-by-ten {
     padding-left: 480px;
   }
 
-  /* line 116, ../sass/partials/_skeleton.scss */
+  /* line 121, ../sass/partials/_skeleton.scss */
   .container .offset-by-eleven {
     padding-left: 528px;
   }
 
-  /* line 117, ../sass/partials/_skeleton.scss */
+  /* line 122, ../sass/partials/_skeleton.scss */
   .container .offset-by-twelve {
     padding-left: 576px;
   }
 
-  /* line 118, ../sass/partials/_skeleton.scss */
+  /* line 123, ../sass/partials/_skeleton.scss */
   .container .offset-by-thirteen {
     padding-left: 624px;
   }
 
-  /* line 119, ../sass/partials/_skeleton.scss */
+  /* line 124, ../sass/partials/_skeleton.scss */
   .container .offset-by-fourteen {
     padding-left: 672px;
   }
 
-  /* line 120, ../sass/partials/_skeleton.scss */
+  /* line 125, ../sass/partials/_skeleton.scss */
   .container .offset-by-fifteen {
     padding-left: 720px;
   }
 }
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  /* line 129, ../sass/partials/_skeleton.scss */
+  /* line 135, ../sass/partials/_skeleton.scss */
   .container {
     width: 300px;
   }
 
-  /* line 131, ../sass/partials/_skeleton.scss */
+  /* line 137, ../sass/partials/_skeleton.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
 
-  /* line 151, ../sass/partials/_skeleton.scss */
+  /* line 157, ../sass/partials/_skeleton.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -900,7 +933,7 @@ legend span {
   }
 
   /* Offsets */
-  /* line 168, ../sass/partials/_skeleton.scss */
+  /* line 174, ../sass/partials/_skeleton.scss */
   .container .offset-by-one,
   .container .offset-by-two,
   .container .offset-by-three,
@@ -919,19 +952,22 @@ legend span {
     padding-left: 0;
   }
 }
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 178, ../sass/partials/_skeleton.scss */
+  /* line 185, ../sass/partials/_skeleton.scss */
   .container {
     width: 420px;
   }
 
-  /* line 180, ../sass/partials/_skeleton.scss */
+  /* line 187, ../sass/partials/_skeleton.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
 
-  /* line 200, ../sass/partials/_skeleton.scss */
+  /* line 207, ../sass/partials/_skeleton.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -954,37 +990,34 @@ legend span {
     width: 420px;
   }
 }
-/* line 208, ../sass/partials/_skeleton.scss */
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+/* line 215, ../sass/partials/_skeleton.scss */
 .container:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: " ";
+  display: table;
   clear: both;
-  visibility: hidden;
 }
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 215, ../sass/partials/_skeleton.scss */
+/* line 222, ../sass/partials/_skeleton.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
 .row:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  content: " ";
+  display: table;
 }
 
-/* line 224, ../sass/partials/_skeleton.scss */
+/* line 226, ../sass/partials/_skeleton.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 228, ../sass/partials/_skeleton.scss */
+/* line 229, ../sass/partials/_skeleton.scss */
 .row,
 .clearfix {
   zoom: 1;
@@ -994,11 +1027,7 @@ or wrap each row of columns in a <div class="row"> */
 /* line 233, ../sass/partials/_skeleton.scss */
 .clear {
   clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  display: table;
 }
 
 /*
