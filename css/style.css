@@ -956,18 +956,18 @@ legend span {
 ================================================== */
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 185, ../sass/partials/_skeleton.scss */
+  /* line 184, ../sass/partials/_skeleton.scss */
   .container {
     width: 420px;
   }
 
-  /* line 187, ../sass/partials/_skeleton.scss */
+  /* line 186, ../sass/partials/_skeleton.scss */
   .container .columns,
   .container .column {
     margin: 0;
   }
 
-  /* line 207, ../sass/partials/_skeleton.scss */
+  /* line 206, ../sass/partials/_skeleton.scss */
   .container .one.column,
   .container .one.columns,
   .container .two.columns,
@@ -993,7 +993,7 @@ legend span {
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
-/* line 215, ../sass/partials/_skeleton.scss */
+/* line 214, ../sass/partials/_skeleton.scss */
 .container:after {
   content: " ";
   display: table;
@@ -1002,7 +1002,7 @@ legend span {
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-/* line 222, ../sass/partials/_skeleton.scss */
+/* line 221, ../sass/partials/_skeleton.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1011,20 +1011,20 @@ or wrap each row of columns in a <div class="row"> */
   display: table;
 }
 
-/* line 226, ../sass/partials/_skeleton.scss */
+/* line 225, ../sass/partials/_skeleton.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 229, ../sass/partials/_skeleton.scss */
+/* line 228, ../sass/partials/_skeleton.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 233, ../sass/partials/_skeleton.scss */
+/* line 232, ../sass/partials/_skeleton.scss */
 .clear {
   clear: both;
   display: table;
