@@ -21,7 +21,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* line 33, ../sass/partials/_base.scss */
 sup {
   font-size: smaller;
-  vertical-align: 0.4em;
+  vertical-align: +0.4em;
 }
 
 /* line 37, ../sass/partials/_base.scss */
@@ -177,7 +177,7 @@ blockquote, blockquote p {
 blockquote {
   margin: 0 0 20px;
   padding: 9px 20px 0 19px;
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
 }
 
 /* line 101, ../sass/partials/_base.scss */
@@ -198,7 +198,7 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 
 /* line 107, ../sass/partials/_base.scss */
 hr {
-  border: solid #dddddd;
+  border: solid #ddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
@@ -294,24 +294,14 @@ img.scale-with-grid {
   height: auto;
 }
 
-/* line 147, ../sass/partials/_base.scss */
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(#eeeeee, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: -moz-linear-gradient(#eeeeee, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: -o-linear-gradient(#eeeeee, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(#eeeeee, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  border: 1px solid #aaaaaa;
-  border-top: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
+/* line 178, ../sass/partials/_base.scss */
+.btn {
+  border: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
   -webkit-border-radius: 3px 3px;
   -moz-border-radius: 3px / 3px;
   border-radius: 3px / 3px;
-  color: #444;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
@@ -322,72 +312,120 @@ input[type="button"] {
   line-height: normal;
   padding: 8px 10px;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: #444444;
 }
-/* line 164, ../sass/partials/_base.scss */
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #222;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(50%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
-  background-image: -webkit-linear-gradient(#dddddd, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: -moz-linear-gradient(#dddddd, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: -o-linear-gradient(#dddddd, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: linear-gradient(#dddddd, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
-  border: 1px solid #888888;
-  border-top: 1px solid #aaaaaa;
-  border-left: 1px solid #aaaaaa;
+/* line 158, ../sass/partials/_base.scss */
+.btn:hover {
+  border: 1px solid #888;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
 }
-/* line 171, ../sass/partials/_base.scss */
-.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
-  border: 1px solid #666666;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(50%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(0, 0, 0, 0.4)));
-  background-image: -webkit-linear-gradient(#cccccc, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
-  background-image: -moz-linear-gradient(#cccccc, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
-  background-image: -o-linear-gradient(#cccccc, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
-  background-image: linear-gradient(#cccccc, rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.4));
+/* line 163, ../sass/partials/_base.scss */
+.btn:active {
+  border: 1px solid #666;
+  outline: none;
 }
-/* line 175, ../sass/partials/_base.scss */
-.button.full-width,
-button.full-width,
-input[type="submit"].full-width,
-input[type="reset"].full-width,
-input[type="button"].full-width {
+/* line 167, ../sass/partials/_base.scss */
+.btn:focus {
+  outline: none;
+}
+/* line 170, ../sass/partials/_base.scss */
+.btn.full-width {
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
   text-align: center;
 }
+/* line 183, ../sass/partials/_base.scss */
+.btn:hover {
+  background-color: #f2f2f2;
+  color: #373737;
+}
+/* line 187, ../sass/partials/_base.scss */
+.btn:active {
+  background-color: #e6e6e6;
+  color: #373737;
+}
 
-/* line 185, ../sass/partials/_base.scss */
+/* line 193, ../sass/partials/_base.scss */
+.btn-inverse {
+  border: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: normal;
+  padding: 8px 10px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #333333;
+  color: white;
+}
+/* line 158, ../sass/partials/_base.scss */
+.btn-inverse:hover {
+  border: 1px solid #888;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+/* line 163, ../sass/partials/_base.scss */
+.btn-inverse:active {
+  border: 1px solid #666;
+  outline: none;
+}
+/* line 167, ../sass/partials/_base.scss */
+.btn-inverse:focus {
+  outline: none;
+}
+/* line 170, ../sass/partials/_base.scss */
+.btn-inverse.full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+/* line 197, ../sass/partials/_base.scss */
+.btn-inverse:hover {
+  background-color: #262626;
+  color: #f2f2f2;
+}
+/* line 201, ../sass/partials/_base.scss */
+.btn-inverse:active {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+/* line 209, ../sass/partials/_base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 193, ../sass/partials/_base.scss */
+/* line 217, ../sass/partials/_base.scss */
 form {
   margin-bottom: 20px;
 }
 
-/* line 196, ../sass/partials/_base.scss */
+/* line 220, ../sass/partials/_base.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 203, ../sass/partials/_base.scss */
+/* line 227, ../sass/partials/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea,
 select {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 6px 4px;
   outline: none;
   -webkit-border-radius: 5px;
@@ -405,29 +443,29 @@ select {
   background: #fff;
 }
 
-/* line 217, ../sass/partials/_base.scss */
+/* line 241, ../sass/partials/_base.scss */
 select {
   padding: 0;
 }
 
-/* line 223, ../sass/partials/_base.scss */
+/* line 247, ../sass/partials/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border: 1px solid #aaaaaa;
+  border: 1px solid #aaa;
   color: #444;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 228, ../sass/partials/_base.scss */
+/* line 252, ../sass/partials/_base.scss */
 textarea {
   min-height: 60px;
 }
 
-/* line 232, ../sass/partials/_base.scss */
+/* line 256, ../sass/partials/_base.scss */
 label,
 legend {
   display: block;
@@ -435,17 +473,17 @@ legend {
   font-size: 13px;
 }
 
-/* line 237, ../sass/partials/_base.scss */
+/* line 261, ../sass/partials/_base.scss */
 select {
   width: 220px;
 }
 
-/* line 240, ../sass/partials/_base.scss */
+/* line 264, ../sass/partials/_base.scss */
 input[type="checkbox"] {
   display: inline;
 }
 
-/* line 244, ../sass/partials/_base.scss */
+/* line 268, ../sass/partials/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -453,17 +491,17 @@ legend span {
   color: #444;
 }
 
-/* line 252, ../sass/partials/_base.scss */
+/* line 276, ../sass/partials/_base.scss */
 .remove-bottom {
   margin-bottom: 0 !important;
 }
 
-/* line 253, ../sass/partials/_base.scss */
+/* line 277, ../sass/partials/_base.scss */
 .half-bottom {
   margin-bottom: 10px !important;
 }
 
-/* line 254, ../sass/partials/_base.scss */
+/* line 278, ../sass/partials/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }

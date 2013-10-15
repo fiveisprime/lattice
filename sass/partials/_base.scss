@@ -140,17 +140,11 @@ img.scale-with-grid {
 // #Buttons
 // ==================================================
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  @include background-image(linear-gradient(#eee, rgba(255,255,255,.2), rgba(0,0,0,.2)));
+@mixin btn {
   border: 1px solid #aaa;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   @include border-radius(3px, 3px);
-  color: #444;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
@@ -162,21 +156,50 @@ input[type="button"] {
   padding: 8px 10px;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   &:hover {
-    color: #222;
-    @include background-image(linear-gradient(#ddd, rgba(255,255,255,.3), rgba(0,0,0,.3)));
     border: 1px solid #888;
     border-top: 1px solid #aaa;
     border-left: 1px solid #aaa;
   }
   &:active {
     border: 1px solid #666;
-    @include background-image(linear-gradient(#ccc, rgba(255,255,255,.35), rgba(0,0,0,.4)));
+    outline: none;
+  }
+  &:focus {
+    outline: none;
   }
   &.full-width {
     width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
     text-align: center;
+  }
+}
+
+.btn {
+  @include btn();
+  background-color: $btnPrimaryBackground;
+  color: $btnPrimary;
+  &:hover {
+    background-color: darken($btnPrimaryBackground, 5%);
+    color: darken($btnPrimary, 5%);
+  }
+  &:active {
+    background-color: darken($btnPrimaryBackground, 10%);
+    color: darken($btnPrimary, 5%);
+  }
+}
+
+.btn-inverse {
+  @include btn();
+  background-color: $btnInverseBackground;
+  color: $btnInverse;
+  &:hover {
+    background-color: darken($btnInverseBackground, 5%);
+    color: darken($btnInverse, 5%);
+  }
+  &:active {
+    background-color: darken($btnInverseBackground, 10%);
+    color: darken($btnInverse, 5%);
   }
 }
 
