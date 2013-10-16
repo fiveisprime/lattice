@@ -338,7 +338,7 @@ img.scale-with-grid {
 }
 
 /* line 185, ../sass/partials/_base.scss */
-.btn-inverse {
+.btn-dark {
   border: none;
   display: inline-block;
   font-size: 12px;
@@ -355,26 +355,26 @@ img.scale-with-grid {
   color: white;
 }
 /* line 158, ../sass/partials/_base.scss */
-.btn-inverse:active {
+.btn-dark:active {
   outline: none;
 }
 /* line 161, ../sass/partials/_base.scss */
-.btn-inverse:focus {
+.btn-dark:focus {
   outline: none;
 }
 /* line 164, ../sass/partials/_base.scss */
-.btn-inverse.full-width {
+.btn-dark.full-width {
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
   text-align: center;
 }
 /* line 189, ../sass/partials/_base.scss */
-.btn-inverse:hover {
+.btn-dark:hover {
   background-color: #373737;
 }
 /* line 192, ../sass/partials/_base.scss */
-.btn-inverse:active {
+.btn-dark:active {
   background-color: #2b2b2b;
   color: #f2f2f2;
 }

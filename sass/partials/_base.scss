@@ -182,16 +182,16 @@ img.scale-with-grid {
   }
 }
 
-.btn-inverse {
+.btn-dark {
   @include btn();
-  background-color: $btnInverseBackground;
-  color: $btnInverse;
+  background-color: $btnDarkBackground;
+  color: $btnDark;
   &:hover {
-    background-color: darken($btnInverseBackground, 5%);
+    background-color: darken($btnDarkBackground, 5%);
   }
   &:active {
-    background-color: darken($btnInverseBackground, 10%);
-    color: darken($btnInverse, 5%);
+    background-color: darken($btnDarkBackground, 10%);
+    color: darken($btnDark, 5%);
   }
 }
 
