@@ -153,6 +153,8 @@ img.scale-with-grid {
   line-height: normal;
   padding: 8px 10px;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   &:active {
     outline: none;
   }
@@ -225,6 +227,8 @@ select {
   display: block;
   margin-bottom: 20px;
   background-color: #fff;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 select {
   padding: 0;
