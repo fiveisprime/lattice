@@ -1,7 +1,8 @@
-skeleton.scss
-=============
+Lattice
+=======
 
-SASS port of Skeleton.
+A modern, beautiful SASS layout framework based on
+[Skeleton](http://www.getskeleton.com).
 
 # Usage
 
