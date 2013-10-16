@@ -413,16 +413,23 @@ select {
   display: block;
   margin-bottom: 20px;
   background-color: #fff;
+}
+
+/* line 234, ../sass/partials/_base.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
 
-/* line 233, ../sass/partials/_base.scss */
+/* line 238, ../sass/partials/_base.scss */
 select {
   padding: 0;
 }
 
-/* line 239, ../sass/partials/_base.scss */
+/* line 244, ../sass/partials/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -434,12 +441,12 @@ textarea:focus {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 244, ../sass/partials/_base.scss */
+/* line 249, ../sass/partials/_base.scss */
 textarea {
   min-height: 60px;
 }
 
-/* line 248, ../sass/partials/_base.scss */
+/* line 253, ../sass/partials/_base.scss */
 label,
 legend {
   display: block;
@@ -447,17 +454,17 @@ legend {
   font-size: 13px;
 }
 
-/* line 253, ../sass/partials/_base.scss */
+/* line 258, ../sass/partials/_base.scss */
 select {
   width: 220px;
 }
 
-/* line 256, ../sass/partials/_base.scss */
+/* line 261, ../sass/partials/_base.scss */
 input[type="checkbox"] {
   display: inline;
 }
 
-/* line 260, ../sass/partials/_base.scss */
+/* line 265, ../sass/partials/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -465,17 +472,17 @@ legend span {
   color: #444;
 }
 
-/* line 268, ../sass/partials/_base.scss */
+/* line 273, ../sass/partials/_base.scss */
 .remove-bottom {
   margin-bottom: 0 !important;
 }
 
-/* line 269, ../sass/partials/_base.scss */
+/* line 274, ../sass/partials/_base.scss */
 .half-bottom {
   margin-bottom: 10px !important;
 }
 
-/* line 270, ../sass/partials/_base.scss */
+/* line 275, ../sass/partials/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }

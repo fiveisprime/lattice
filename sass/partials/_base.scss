@@ -227,8 +227,13 @@ select {
   display: block;
   margin-bottom: 20px;
   background-color: #fff;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+   -webkit-appearance: none;
+   -webkit-border-radius: 0;
 }
 select {
   padding: 0;
