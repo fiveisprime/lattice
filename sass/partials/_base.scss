@@ -60,6 +60,8 @@ table {
   border-spacing: 0;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 // #Basic Styles
 // ==================================================
 body {
@@ -67,8 +69,8 @@ body {
   font-family: $bodyFontFamily;
   font-size: $bodyFontSize;
   font-weight: $bodyFontWeight;
+  line-height: $bodyLineHeight;
   color: $bodyColor;
-    -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -143,7 +145,7 @@ img.scale-with-grid {
 @mixin btn {
   border: none;
   display: inline-block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -171,7 +173,6 @@ img.scale-with-grid {
   color: $btnPrimary;
   &:hover {
     background-color: darken($btnPrimaryBackground, 5%);
-    color: darken($btnPrimary, 5%);
   }
   &:active {
     background-color: darken($btnPrimaryBackground, 10%);
@@ -185,7 +186,6 @@ img.scale-with-grid {
   color: $btnInverse;
   &:hover {
     background-color: darken($btnInverseBackground, 5%);
-    color: darken($btnInverse, 5%);
   }
   &:active {
     background-color: darken($btnInverseBackground, 10%);
@@ -217,15 +217,14 @@ select {
   border: 1px solid #ccc;
   padding: 6px 4px;
   outline: none;
-  @include border-radius();
-  font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #777;
+  font: 13px "Open Sans", sans-serif;
+  color: #505050;
   margin: 0;
   width: 210px;
   max-width: 100%;
   display: block;
   margin-bottom: 20px;
-  background: #fff;
+  background-color: #fff;
 }
 select {
   padding: 0;

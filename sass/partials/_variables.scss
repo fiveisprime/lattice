@@ -1,8 +1,9 @@
 // #Body Variables
 // ==================================================
-$bodyFontFamily: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bodyFontFamily: 'Open Sans', sans-serif;
 $bodyFontSize: 14px;
 $bodyFontWeight: 21px;
+$bodyLineHeight: 21px;
 
 $bodyBackground: #FFF;
 $bodyColor: #444;
@@ -14,15 +15,15 @@ $linkHoverColor: #000;
 
 // #Button Variables
 // ==================================================
-$btnPrimary: #444;
-$btnPrimaryBackground: #3CBAC8;
+$btnPrimary: #FDFDFD;
+$btnPrimaryBackground: #046dd5;
 
 $btnInverse: #FFF;
 $btnInverseBackground: #444;
 
 // #Header Variables
 // ==================================================
-$headerFontFamily: "Georgia", "Times New Roman", serif;
+$headerFontFamily: 'Open Sans', sans-serif;
 $headerFontWeight: normal;
 $headerColor: #181818;
 
