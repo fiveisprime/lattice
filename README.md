@@ -22,7 +22,7 @@ build the development version - to build the production version, run
 
 The MIT License (MIT)
 
-Copyright (c) 2011 Dave Gamache & Matt Hernandez
+Copyright (c) 2013 Dave Gamache & Matt Hernandez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
