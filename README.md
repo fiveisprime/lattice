@@ -1,7 +1,7 @@
 Lattice
 =======
 
-A modern, beautiful SASS layout framework based on
+A modern, beautiful SASS grid layout framework based on
 [Skeleton](http://www.getskeleton.com).
 
 # Usage
