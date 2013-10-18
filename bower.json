@@ -1,0 +1,32 @@
+{
+  "name": "lattice",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fiveisprime/lattice",
+  "authors": [
+    "Matt Hernandez <matt@modulus.io>",
+    "Dave Gamache"
+  ],
+  "description": "A modern, beautiful CSS grid layout framework based on Skeleton.",
+  "main": "/css/style.css",
+  "keywords": [
+    "grid",
+    "layout",
+    "lattice",
+    "skeleton",
+    "css",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".jshintrc",
+    "LICENSE",
+    "images",
+    "js",
+    "sass",
+    "config.rb",
+    "Makefile"
+    "index.html",
+    "node_modules",
+    "bower_components"
+  ]
+}
