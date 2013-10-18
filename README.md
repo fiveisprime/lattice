@@ -16,6 +16,10 @@ To add custom fonts, you will need to create a fonts directory (`config.rb` is
 already configured for this) then follow the template provided in the
 `_layout.scss` partial.
 
+Or install the compiled CSS only using bower:
+
+    $ bower install lattice
+
 # Requirements
 
 In order to build the CSS, you will need to install
