@@ -4,19 +4,35 @@ Lattice
 A modern, beautiful SASS grid layout framework based on
 [Skeleton](http://www.getskeleton.com).
 
+Feel free to contribute in any way that you see fit. :)
+
 # Usage
 
-Clone it and use `css/style.css` :)
+This is your starting point for using Lattice. Clone the repo then add content
+to `index.html`. A `js` directory is also present for your scripts and `images`
+for images.
 
-`config.rb` is included to make using the source easier. Update the sass and css
-source and go. You'll also need compass installed.
+To add custom fonts, you will need to create a fonts directory (`config.rb` is
+already configured for this) then follow the template provided in the
+`_layout.scss` partial.
 
-Customization should be made within `_layout.scss` or add your own partials and
-append them to `style.scss`.
+# Requirements
 
-Rebuild using `make rebuild` or `make clean` followed by `make build`. This will
-build the development version - to build the production version, run
-`make rebuild ENV=production`.
+In order to build the CSS, you will need to install
+[compass](http://compass-style.org). Note that `config.rb` is already present so
+that you may use the compass helpers such as `image-url` and `font-url`.
+
+Once Compass is installed, it's as easy as running `make` with the desired
+environment. [CodeKit](http://incident57.com/codekit/) also works well with
+lattice.
+
+## Building Development
+
+    make rebuild
+
+## Building Production
+
+    make rebuild ENV=production
 
 # License
 
