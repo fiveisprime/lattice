@@ -6,7 +6,7 @@
     "Matt Hernandez <matt@modulus.io>",
     "Dave Gamache"
   ],
-  "description": "A modern, beautiful CSS grid layout framework based on Skeleton.",
+  "description": "A simple, beautiful CSS grid layout framework based on Skeleton.",
   "main": "/css/style.css",
   "keywords": [
     "grid",
@@ -23,8 +23,9 @@
     "images",
     "js",
     "sass",
+    ".sasscache",
     "config.rb",
-    "Makefile"
+    "Makefile",
     "index.html",
     "node_modules",
     "bower_components"
