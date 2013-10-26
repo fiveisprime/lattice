@@ -9,8 +9,6 @@
  * Copyright 2013, Dave Gamache, Matt Hernandez
  * Free to use under the MIT license.
  */
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
 /* line 22, ../sass/partials/_base.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -66,7 +64,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 64, ../sass/partials/_base.scss */
+/* line 65, ../sass/partials/_base.scss */
 body {
   background: white;
   font-family: "Open Sans", sans-serif;
@@ -77,98 +75,97 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 76, ../sass/partials/_base.scss */
+/* line 77, ../sass/partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
 }
 
-/* line 80, ../sass/partials/_base.scss */
+/* line 81, ../sass/partials/_base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
-/* line 81, ../sass/partials/_base.scss */
+/* line 82, ../sass/partials/_base.scss */
 h1 {
   font-size: 46px;
   line-height: 50px;
   margin-bottom: 14px;
 }
 
-/* line 82, ../sass/partials/_base.scss */
+/* line 83, ../sass/partials/_base.scss */
 h2 {
   font-size: 35px;
   line-height: 40px;
   margin-bottom: 10px;
 }
 
-/* line 83, ../sass/partials/_base.scss */
+/* line 84, ../sass/partials/_base.scss */
 h3 {
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 8px;
 }
 
-/* line 84, ../sass/partials/_base.scss */
+/* line 85, ../sass/partials/_base.scss */
 h4 {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 4px;
 }
 
-/* line 85, ../sass/partials/_base.scss */
+/* line 86, ../sass/partials/_base.scss */
 h5 {
   font-size: 17px;
   line-height: 24px;
 }
 
-/* line 86, ../sass/partials/_base.scss */
+/* line 87, ../sass/partials/_base.scss */
 h6 {
   font-size: 14px;
   line-height: 21px;
 }
 
-/* line 87, ../sass/partials/_base.scss */
+/* line 88, ../sass/partials/_base.scss */
 .subheader {
   color: #777;
 }
 
-/* line 89, ../sass/partials/_base.scss */
+/* line 90, ../sass/partials/_base.scss */
 p {
   margin: 0 0 20px 0;
 }
 
-/* line 90, ../sass/partials/_base.scss */
+/* line 91, ../sass/partials/_base.scss */
 p img {
   margin: 0;
 }
 
-/* line 91, ../sass/partials/_base.scss */
+/* line 92, ../sass/partials/_base.scss */
 p.lead {
   font-size: 21px;
   line-height: 27px;
   color: #777;
 }
 
-/* line 93, ../sass/partials/_base.scss */
+/* line 94, ../sass/partials/_base.scss */
 em {
   font-style: italic;
 }
 
-/* line 94, ../sass/partials/_base.scss */
+/* line 95, ../sass/partials/_base.scss */
 strong {
   font-weight: bold;
   color: #333;
 }
 
-/* line 95, ../sass/partials/_base.scss */
+/* line 96, ../sass/partials/_base.scss */
 small {
   font-size: 80%;
 }
 
-/*  Blockquotes  */
-/* line 98, ../sass/partials/_base.scss */
+/* line 100, ../sass/partials/_base.scss */
 blockquote, blockquote p {
   font-size: 17px;
   line-height: 24px;
@@ -176,30 +173,30 @@ blockquote, blockquote p {
   font-style: italic;
 }
 
-/* line 99, ../sass/partials/_base.scss */
+/* line 101, ../sass/partials/_base.scss */
 blockquote {
   margin: 0 0 20px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #ddd;
 }
 
-/* line 100, ../sass/partials/_base.scss */
+/* line 102, ../sass/partials/_base.scss */
 blockquote cite {
   display: block;
   font-size: 12px;
   color: #555;
 }
-/* line 102, ../sass/partials/_base.scss */
+/* line 104, ../sass/partials/_base.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
 
-/* line 104, ../sass/partials/_base.scss */
+/* line 106, ../sass/partials/_base.scss */
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555;
 }
 
-/* line 106, ../sass/partials/_base.scss */
+/* line 108, ../sass/partials/_base.scss */
 hr {
   border: solid #ddd;
   border-width: 1px 0 0;
@@ -208,96 +205,94 @@ hr {
   height: 0;
 }
 
-/* line 110, ../sass/partials/_base.scss */
+/* line 112, ../sass/partials/_base.scss */
 a, a:visited {
   color: #333333;
   text-decoration: underline;
   outline: 0;
 }
 
-/* line 111, ../sass/partials/_base.scss */
+/* line 113, ../sass/partials/_base.scss */
 a:hover, a:focus {
   color: black;
 }
 
-/* line 112, ../sass/partials/_base.scss */
+/* line 114, ../sass/partials/_base.scss */
 p a, p a:visited {
   line-height: inherit;
 }
 
-/* #Lists
-================================================== */
-/* line 116, ../sass/partials/_base.scss */
+/* line 118, ../sass/partials/_base.scss */
 ul, ol {
   margin-bottom: 20px;
 }
 
-/* line 117, ../sass/partials/_base.scss */
+/* line 119, ../sass/partials/_base.scss */
 ul {
   list-style: none outside;
 }
 
-/* line 118, ../sass/partials/_base.scss */
+/* line 120, ../sass/partials/_base.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 119, ../sass/partials/_base.scss */
+/* line 121, ../sass/partials/_base.scss */
 ol, ul.square, ul.circle, ul.disc {
   margin-left: 30px;
 }
 
-/* line 120, ../sass/partials/_base.scss */
+/* line 122, ../sass/partials/_base.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 121, ../sass/partials/_base.scss */
+/* line 123, ../sass/partials/_base.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 122, ../sass/partials/_base.scss */
+/* line 124, ../sass/partials/_base.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 124, ../sass/partials/_base.scss */
+/* line 126, ../sass/partials/_base.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 4px 0 5px 30px;
   font-size: 90%;
 }
 
-/* line 126, ../sass/partials/_base.scss */
+/* line 128, ../sass/partials/_base.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 6px;
 }
 
-/* line 127, ../sass/partials/_base.scss */
+/* line 129, ../sass/partials/_base.scss */
 li {
   line-height: 18px;
   margin-bottom: 12px;
 }
 
-/* line 128, ../sass/partials/_base.scss */
+/* line 130, ../sass/partials/_base.scss */
 ul.large li {
   line-height: 21px;
 }
 
-/* line 129, ../sass/partials/_base.scss */
+/* line 131, ../sass/partials/_base.scss */
 li p {
   line-height: 21px;
 }
 
-/* line 134, ../sass/partials/_base.scss */
+/* line 136, ../sass/partials/_base.scss */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
 }
 
-/* line 169, ../sass/partials/_base.scss */
+/* line 171, ../sass/partials/_base.scss */
 .btn {
   border: none;
   display: inline-block;
@@ -314,32 +309,32 @@ img.scale-with-grid {
   background-color: #046dd5;
   color: #fdfdfd;
 }
-/* line 155, ../sass/partials/_base.scss */
+/* line 157, ../sass/partials/_base.scss */
 .btn:active {
   outline: none;
 }
-/* line 158, ../sass/partials/_base.scss */
+/* line 160, ../sass/partials/_base.scss */
 .btn:focus {
   outline: none;
 }
-/* line 161, ../sass/partials/_base.scss */
+/* line 163, ../sass/partials/_base.scss */
 .btn.full-width {
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
   text-align: center;
 }
-/* line 173, ../sass/partials/_base.scss */
+/* line 175, ../sass/partials/_base.scss */
 .btn:hover {
   background-color: #0460bc;
 }
-/* line 176, ../sass/partials/_base.scss */
+/* line 178, ../sass/partials/_base.scss */
 .btn:active {
   background-color: #0353a3;
   color: #f0f0f0;
 }
 
-/* line 182, ../sass/partials/_base.scss */
+/* line 184, ../sass/partials/_base.scss */
 .btn-dark {
   border: none;
   display: inline-block;
@@ -356,49 +351,49 @@ img.scale-with-grid {
   background-color: #444444;
   color: white;
 }
-/* line 155, ../sass/partials/_base.scss */
+/* line 157, ../sass/partials/_base.scss */
 .btn-dark:active {
   outline: none;
 }
-/* line 158, ../sass/partials/_base.scss */
+/* line 160, ../sass/partials/_base.scss */
 .btn-dark:focus {
   outline: none;
 }
-/* line 161, ../sass/partials/_base.scss */
+/* line 163, ../sass/partials/_base.scss */
 .btn-dark.full-width {
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
   text-align: center;
 }
-/* line 186, ../sass/partials/_base.scss */
+/* line 188, ../sass/partials/_base.scss */
 .btn-dark:hover {
   background-color: #373737;
 }
-/* line 189, ../sass/partials/_base.scss */
+/* line 191, ../sass/partials/_base.scss */
 .btn-dark:active {
   background-color: #2b2b2b;
   color: #f2f2f2;
 }
 
-/* line 197, ../sass/partials/_base.scss */
+/* line 199, ../sass/partials/_base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 205, ../sass/partials/_base.scss */
+/* line 207, ../sass/partials/_base.scss */
 form {
   margin-bottom: 20px;
 }
 
-/* line 208, ../sass/partials/_base.scss */
+/* line 210, ../sass/partials/_base.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 215, ../sass/partials/_base.scss */
+/* line 217, ../sass/partials/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -417,7 +412,7 @@ select {
   background-color: #fff;
 }
 
-/* line 231, ../sass/partials/_base.scss */
+/* line 233, ../sass/partials/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -426,12 +421,12 @@ textarea {
   -webkit-border-radius: 0;
 }
 
-/* line 235, ../sass/partials/_base.scss */
+/* line 237, ../sass/partials/_base.scss */
 select {
   padding: 0;
 }
 
-/* line 241, ../sass/partials/_base.scss */
+/* line 243, ../sass/partials/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -443,12 +438,12 @@ textarea:focus {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 246, ../sass/partials/_base.scss */
+/* line 248, ../sass/partials/_base.scss */
 textarea {
   min-height: 60px;
 }
 
-/* line 250, ../sass/partials/_base.scss */
+/* line 252, ../sass/partials/_base.scss */
 label,
 legend {
   display: block;
@@ -456,17 +451,17 @@ legend {
   font-size: 13px;
 }
 
-/* line 255, ../sass/partials/_base.scss */
+/* line 257, ../sass/partials/_base.scss */
 select {
   width: 220px;
 }
 
-/* line 258, ../sass/partials/_base.scss */
+/* line 260, ../sass/partials/_base.scss */
 input[type="checkbox"] {
   display: inline;
 }
 
-/* line 262, ../sass/partials/_base.scss */
+/* line 264, ../sass/partials/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -474,17 +469,17 @@ legend span {
   color: #444;
 }
 
-/* line 270, ../sass/partials/_base.scss */
+/* line 272, ../sass/partials/_base.scss */
 .remove-bottom {
   margin-bottom: 0 !important;
 }
 
-/* line 271, ../sass/partials/_base.scss */
+/* line 273, ../sass/partials/_base.scss */
 .half-bottom {
   margin-bottom: 10px !important;
 }
 
-/* line 272, ../sass/partials/_base.scss */
+/* line 274, ../sass/partials/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
@@ -494,15 +489,6 @@ legend span {
  * Copyright 2013, Dave Gamache, Matt Hernandez
  * Free to use under the MIT license.
  */
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-/* #Base 960 Grid
-================================================== */
 /* line 18, ../sass/partials/_lattice.scss */
 .container {
   position: relative;
@@ -528,7 +514,6 @@ legend span {
   margin-bottom: 20px;
 }
 
-/* Nested Column Classes */
 /* line 25, ../sass/partials/_lattice.scss */
 .column.alpha, .columns.alpha,
 .column:first-child, .columns:first-child {
@@ -541,7 +526,6 @@ legend span {
   margin-right: 0;
 }
 
-/* Base Grid */
 /* line 31, ../sass/partials/_lattice.scss */
 .container .one.column,
 .container .one.columns {
@@ -633,7 +617,6 @@ legend span {
   width: 620px;
 }
 
-/* Offsets */
 /* line 52, ../sass/partials/_lattice.scss */
 .container .offset-by-one {
   padding-left: 60px;
@@ -709,8 +692,6 @@ legend span {
   padding-left: 900px;
 }
 
-/* #Tablet (Portrait)
-================================================== */
 /* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /* line 76, ../sass/partials/_lattice.scss */
@@ -837,7 +818,6 @@ legend span {
     width: 492px;
   }
 
-  /* Offsets */
   /* line 108, ../sass/partials/_lattice.scss */
   .container .offset-by-one {
     padding-left: 48px;
@@ -913,8 +893,6 @@ legend span {
     padding-left: 720px;
   }
 }
-/*  #Mobile (Portrait)
-================================================== */
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
   /* line 132, ../sass/partials/_lattice.scss */
@@ -951,7 +929,6 @@ legend span {
     width: 300px;
   }
 
-  /* Offsets */
   /* line 171, ../sass/partials/_lattice.scss */
   .container .offset-by-one,
   .container .offset-by-two,
@@ -971,8 +948,6 @@ legend span {
     padding-left: 0;
   }
 }
-/* #Mobile (Landscape)
-================================================== */
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* line 181, ../sass/partials/_lattice.scss */
@@ -1009,8 +984,6 @@ legend span {
     width: 420px;
   }
 }
-/* #Clearing
-================================================== */
 /* Self Clearing Goodness */
 /* line 211, ../sass/partials/_lattice.scss */
 .container:after {
@@ -1019,8 +992,6 @@ legend span {
   clear: both;
 }
 
-/* Use clearfix class on parent to clear nested columns,
-or wrap each row of columns in a <div class="row"> */
 /* line 218, ../sass/partials/_lattice.scss */
 .clearfix:before,
 .clearfix:after,
@@ -1030,20 +1001,19 @@ or wrap each row of columns in a <div class="row"> */
   display: table;
 }
 
-/* line 222, ../sass/partials/_lattice.scss */
+/* line 223, ../sass/partials/_lattice.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 225, ../sass/partials/_lattice.scss */
+/* line 227, ../sass/partials/_lattice.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
-/* You can also use a <br class="clear" /> to clear columns */
-/* line 229, ../sass/partials/_lattice.scss */
+/* line 232, ../sass/partials/_lattice.scss */
 .clear {
   clear: both;
   display: table;
